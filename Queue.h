@@ -7,7 +7,7 @@
 
 class Queue
 {
-private:
+protected:
     Node *listNode[NUMBER_OF_CHARACTER];
     uint8_t top;
 

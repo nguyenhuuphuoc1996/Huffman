@@ -2,8 +2,9 @@
 #define HUFFMAN_H
 
 #include <iostream>
-#include "ComputeFrequency.h"
 #include <stdint.h>
+#include "ComputeFrequency.h"
+#include "Queue.h"
 
 struct Node
 {
@@ -13,7 +14,7 @@ struct Node
     Node *right;
 };
 
-class Huffman
+class Huffman : public Queue
 {
 private:
     Node *root;
@@ -21,7 +22,7 @@ private:
 public:
     Huffman() = default;
     ~Huffman();
-    void g_Huffman_NodeCreate();
+    void g_Huffman_NodeCreate(probabilityTable listTable[]);
     void g_Huffman_Procedure(probabilityTable p_listTable[]);
 };
 

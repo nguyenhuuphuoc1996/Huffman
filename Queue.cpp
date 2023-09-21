@@ -14,10 +14,12 @@ void Queue::g_Queue_Insert(Node *p_node)
     top += 1;
     listNode[top] = p_node;
 }
+
 Node *Queue::g_Queue_Deletion()
 {
     return listNode[top--];
 }
+
 void Queue::g_Queue_Sort()
 {
     // Soft: maximum -> minimum

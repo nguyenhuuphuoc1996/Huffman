@@ -1,5 +1,11 @@
 #include "ComputeFrequency.h"
-
+ComputeFrequency::ComputeFrequency()
+{
+    for (int i = 0; i < NUMBER_OF_CHARACTER; i++)
+    {
+        listTable[i].probabilityAppearance = INVALID_FREQUENCY;
+    }
+}
 ComputeFrequency::~ComputeFrequency()
 {
 }

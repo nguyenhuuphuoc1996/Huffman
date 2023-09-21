@@ -7,6 +7,8 @@
 
 #define NUMBER_OF_CHARACTER 1024
 
+#define INVALID_FREQUENCY 2
+
 struct probabilityTable
 {
     char character;
@@ -19,7 +21,7 @@ private:
     probabilityTable listTable[NUMBER_OF_CHARACTER];
 
 public:
-    ComputeFrequency() = default;
+    ComputeFrequency();
     ~ComputeFrequency();
 
     bool g_ComputeFrequency_FrequencyProcessing(std::string p_string);
