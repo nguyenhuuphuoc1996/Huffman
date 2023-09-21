@@ -4,15 +4,8 @@
 #include <iostream>
 #include <stdint.h>
 #include "ComputeFrequency.h"
+#include "Structure.h"
 #include "Queue.h"
-
-struct Node
-{
-    uint8_t binaryDecision;
-    float frequency;
-    Node *left;
-    Node *right;
-};
 
 class Huffman : public Queue
 {

@@ -3,11 +3,12 @@
 
 #include <iostream>
 #include "ComputeFrequency.h"
-#include "Huffman.h"
+// #include "Huffman.h"
+#include "Structure.h"
 
 class Queue
 {
-protected:
+private:
     Node *listNode[NUMBER_OF_CHARACTER];
     uint8_t top;
 

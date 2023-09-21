@@ -14,7 +14,7 @@ void Huffman::g_Huffman_NodeCreate(probabilityTable listTable[])
         node->left = nullptr;
         node->right = nullptr;
         // add to array of pointer, managed by Queue class
-        listNode[k] = node;
+        // listNode[k] = node;
     }
 }
 void Huffman::g_Huffman_Procedure(probabilityTable p_listTable[])

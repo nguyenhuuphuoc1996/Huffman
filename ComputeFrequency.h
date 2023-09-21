@@ -4,16 +4,10 @@
 #include <stdio.h>
 #include <cstring>
 #include <iostream>
+#include "Structure.h"
 
 #define NUMBER_OF_CHARACTER 1024
-
 #define INVALID_FREQUENCY 2
-
-struct probabilityTable
-{
-    char character;
-    float probabilityAppearance;
-};
 
 class ComputeFrequency
 {
