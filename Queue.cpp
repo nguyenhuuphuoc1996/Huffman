@@ -20,6 +20,16 @@ Node *Queue::g_Queue_Deletion()
     return listNode[top--];
 }
 
+uint8_t Queue::g_Queue_TopIs()
+{
+    return top;
+}
+
+Node *Queue::g_Queue_GetNode(int k)
+{
+    return listNode[k];
+}
+
 void Queue::g_Queue_Sort()
 {
     // Soft: maximum -> minimum

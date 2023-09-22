@@ -4,6 +4,7 @@ ComputeFrequency::ComputeFrequency()
     for (int i = 0; i < NUMBER_OF_CHARACTER; i++)
     {
         listTable[i].probabilityAppearance = INVALID_FREQUENCY;
+        listTable[i].character = INVALID_CHARACTER;
     }
 }
 ComputeFrequency::~ComputeFrequency()

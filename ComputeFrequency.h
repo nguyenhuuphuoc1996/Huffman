@@ -5,14 +5,14 @@
 #include <cstring>
 #include <iostream>
 #include "Structure.h"
+#include "Huffman.h"
 
-#define NUMBER_OF_CHARACTER 1024
-#define INVALID_FREQUENCY 2
-
-class ComputeFrequency
+class ComputeFrequency : public Huffman
 {
 private:
     probabilityTable listTable[NUMBER_OF_CHARACTER];
+    encoding p_data_encoding[NUMBER_OF_CHARACTER];
+    decoding p_data_decoding[NUMBER_OF_CHARACTER];
 
 public:
     ComputeFrequency();
@@ -24,6 +24,11 @@ public:
     {
         return listTable;
     }
+
+    void g_ComputeFrequency_Encoding_File() {}
+    void g_ComputeFrequency_Decoding_File() {}
+    void g_ComputeFrequency_Read_File() {}
+    void g_ComputeFrequency_Write_File() {}
 };
 
 #endif
